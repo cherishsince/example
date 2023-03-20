@@ -1,0 +1,22 @@
+# 端口
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: discover-server
+eureka:
+  instance:
+    hostname: localhost
+    # 页面状态
+    statusPageUrlPath: ${server.servlet.context-path}/info
+    healthCheckUrlPath: ${server.servlet.context-path}/health
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    # 心跳检查
+    healthcheck:
+      enabled: true
