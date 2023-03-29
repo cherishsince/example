@@ -13,5 +13,6 @@ public class Bank2 {
     @TableId(type = IdType.ASSIGN_ID)
     private Long id;
     private String name;
+    private Double freezeAmount;
     private Double amount;
 }

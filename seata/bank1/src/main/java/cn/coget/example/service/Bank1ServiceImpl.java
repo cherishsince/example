@@ -1,7 +1,6 @@
 package cn.coget.example.service;
 
 import cn.coget.example.client.Bank2Client;
-import cn.coget.example.dataobject.Bank1;
 import cn.coget.example.mapper.Bank1Mapper;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;

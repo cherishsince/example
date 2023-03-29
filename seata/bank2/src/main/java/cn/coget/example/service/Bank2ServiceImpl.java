@@ -21,11 +21,11 @@ public class Bank2ServiceImpl implements Bank2Service {
         if (amount == 3) {
             throw new RuntimeException("人为的异常3!");
         }
-        try {
-            Thread.sleep(5000L);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(5000L);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         return "OK";
     }
 }

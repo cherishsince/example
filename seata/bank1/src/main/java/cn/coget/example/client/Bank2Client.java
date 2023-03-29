@@ -9,4 +9,8 @@ public interface Bank2Client {
 
     @GetMapping( "/bank2/transfer")
     String transfer(@RequestParam("accountNo") String accountNo, @RequestParam("amount") Double amount);
+
+    @GetMapping( "/bank2/tccTransfer")
+    String tccTransfer(@RequestParam("accountNo") String accountNo, @RequestParam("amount") Double amount);
+
 }
